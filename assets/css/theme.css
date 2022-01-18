@@ -1,0 +1,137 @@
+:root {
+    --color-red: #FF2021;
+    --color-blue-1: #669BBC;
+    --color-blue-2: #003049;
+    --color-yellow: #FDF0D5;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --box-shadow: 10px 10px 30px rgba(51, 51, 51, 0.05);
+}
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 62.5%;
+    /*tương đương 10px*/
+    line-height: 1.5;
+    background-color: var(--white-color);
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.img-wrap {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 56.25%;
+}
+
+.img-wrap img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    transform: translateZ(0);
+    margin: 0 auto;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.block-title {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 32px
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-title .title {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 44px;
+    color: var(--color-black);
+}
+
+.block-title .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.block-title .line--color {
+    background-color: var(--color-red);
+    width: 90px;
+    height: 0.5px;
+}
+
+.block-title .line__icon {
+    width: 13px;
+    margin: 0 4px;
+}
+
+button,
+.btn,
+input[type="submit"] {
+    background: var(--color-red);
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    min-width: 100px;
+    height: 26px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.4rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
