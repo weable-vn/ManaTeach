@@ -38,3 +38,20 @@ jQuery(document).ready(function() {
         dots: true
     })
 })
+
+const boxes = document.querySelectorAll('.box-content-left-right .box-left-right__item');
+
+window.addEventListener('scroll', checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+    const triggerBottom = window.innerHeight / 5 * 4
+    
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        if(boxTop < triggerBottom) {
+            box.classList.add('show');
+        }
+    });  
+}
