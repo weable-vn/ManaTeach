@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Mana Teach</title>
+
+    <!-- Font Family From Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="preload" as="style">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../assets/css/boostrap.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="../libs/slick/slick.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        input[type='text'], 
+        input[type='tel'], 
+        input[type='password'], 
+        input[type='email'], 
+        input[type='url'], 
+        input[type='search'], 
+        input[type='number'] {
+            outline: none;
+            border: 1px solid #003049;
+            background: transparent;
+            font-family: var(--font-family);
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            width: 100%;
+            padding-left: 13px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 0;
+        }
+
+        .advise .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            margin: 40px 0;
+        }
+        
+        .advise .form-group .box-icon{
+            background: #003049;
+            width: 33px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .advise .form-group .box-icon .icon{
+            width: 20px;
+            height: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .advise .form-group .box-icon .icon.name{
+            background-image: url(../assets/images/Icon-name.svg);
+        }
+        .advise .form-group .box-icon .icon.phone{
+            background-image: url(../assets/images/icon-phone.svg);
+        }
+        .advise .form-group .box-icon .icon.email{
+            background-image: url(../assets/images/icon-email.svg);
+        }
+        .advise .form-group .box-icon .icon.facebook{
+            background-image: url(../assets/images/icon-fb.svg);
+        }
+
+        .advise .btn-submit{
+            font-size: 1.8rem;
+            line-height: 22px;
+            margin: 20px auto;
+            height: auto;
+            padding: 10px 60px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .advise .see-more{
+            display: flex;
+            margin: 0 auto;
+            background: hsl(40, 91%, 91%);
+            padding: 20px;
+            width: 50%;
+        }
+
+        .advise .see-more .icon-see-more img{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+
+        .advise .see-more .see-more-detailes{
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 22px;
+            text-align: center;
+            color: #003049;
+            margin: 0 10px;
+        }
+
+        .advise .see-more .see-more-detailes a{
+            color: #669BBC;
+        }
+
+       
+        @media (max-width: 768px){
+            .advise .form-group{
+                margin: 10px 0;
+            }
+            .advise .form-group .your-name{
+                flex: 1;
+            }
+
+            .advise .see-more{
+                margin: 0;
+                width: 100%;
+            }
+            .advise .see-more .see-more-detailes{
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="advise">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <span class="box-icon">
+                            <span class="icon name"></span>
+                        </span>
+                        <span class="your-name">
+                            <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Họ và tên...">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <span class="box-icon">
+                            <span class="icon phone"></span>
+                        </span>
+                        <span class="your-name">
+                            <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Số điện thoại...">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <span class="box-icon">
+                            <span class="icon email"></span>
+                        </span>
+                        <span class="your-name">
+                            <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Địa chỉ email...">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <span class="box-icon">
+                            <span class="icon facebook"></span>
+                        </span>
+                        <span class="your-name">
+                            <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Link facebook...">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <input type="submit" value="Gửi yêu cầu" class="btn-submit">
+                </div>
+            </div>
+            <div class="see-more">
+                <div class="icon-see-more">
+                    <img src="../assets/images/icon-see-more.svg" alt="">
+                </div>
+                <span class="see-more-detailes">Xem chi tiết khóa học tại: <a href="">linktruycapkhoahoc.com</a> </span>
+            </div>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../libs/slick/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
