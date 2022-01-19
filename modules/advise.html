@@ -28,7 +28,7 @@
         input[type='search'], 
         input[type='number'] {
             outline: none;
-            border: 1px solid #003049;
+            border: 1px solid var( --color-blue-2);
             background: transparent;
             font-family: var(--font-family);
             color: var(--primary-color);
@@ -48,9 +48,9 @@
         }
         
         .advise .form-group .box-icon{
-            background: #003049;
-            width: 33px;
-            height: 33px;
+            background: var( --color-blue-2);
+            width: 39px;
+            height: 39px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -75,6 +75,12 @@
             background-image: url(../assets/images/icon-fb.svg);
         }
 
+        .advise .form-group .input-text input{
+            font-size: 1.2rem;
+            line-height: 17px;
+            color:var( --color-blue-2);
+        }
+
         .advise .btn-submit{
             font-size: 1.8rem;
             line-height: 22px;
@@ -89,7 +95,7 @@
         .advise .see-more{
             display: flex;
             margin: 0 auto;
-            background: hsl(40, 91%, 91%);
+            background: var(--color-yellow);
             padding: 20px;
             width: 50%;
         }
@@ -102,15 +108,15 @@
 
         .advise .see-more .see-more-detailes{
             font-weight: 500;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 22px;
             text-align: center;
-            color: #003049;
+            color: var( --color-blue-2);
             margin: 0 10px;
         }
 
         .advise .see-more .see-more-detailes a{
-            color: #669BBC;
+            color: var( --color-blue-1);
         }
 
        
@@ -118,7 +124,7 @@
             .advise .form-group{
                 margin: 10px 0;
             }
-            .advise .form-group .your-name{
+            .advise .form-group .input-text{
                 flex: 1;
             }
 
@@ -137,42 +143,42 @@
     <section class="advise">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
                         <span class="box-icon">
                             <span class="icon name"></span>
                         </span>
-                        <span class="your-name">
+                        <span class="input-text">
                             <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Họ và tên...">
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
                         <span class="box-icon">
                             <span class="icon phone"></span>
                         </span>
-                        <span class="your-name">
+                        <span class="input-text">
                             <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Số điện thoại...">
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
                         <span class="box-icon">
                             <span class="icon email"></span>
                         </span>
-                        <span class="your-name">
+                        <span class="input-text">
                             <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Địa chỉ email...">
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
                         <span class="box-icon">
                             <span class="icon facebook"></span>
                         </span>
-                        <span class="your-name">
+                        <span class="input-text">
                             <input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Link facebook...">
                         </span>
                     </div>
