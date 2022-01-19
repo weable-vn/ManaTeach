@@ -20,13 +20,264 @@
     <link rel="stylesheet" href="../libs/slick/slick.css">
     <link rel="stylesheet" href="../style.css">
 
+    <style type="text/css">
+        /* Home Banner */
+        .home-banner {
+            margin-bottom: 50px;
+        }
+        .home-banner__slider {
+            margin-bottom: 0;
+        }
+        .home-banner__slider-item .img-wrap {
+            padding-top: 39.25%;
+        }
+        .home-banner__slider .slick-dots {
+            bottom: 30px;
+        }
+        .home-banner__slider .slick-dots li button:before {
+            font-size: 14px;
+            opacity: 1;
+            color: var(--color-white);
+        }
+        .home-banner__slider  .slick-dots li.slick-active button:before {
+            color: var(--color-red);
+        }
+        /* End Home Banner */
+    </style>
+
 </head>
 <body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar__wrapper">
+                <div class="top-bar__contact">
+                    <img src="../assets/images/ic-phone.svg" alt="" class="top-bar__contact-icon">
+                    <div class="top-bar__hotline">
+                        <span>Hotline: </span>
+                        <a href="tel:0236.345.6789" class="top-bar__hotline-link">0236.345.6789</a>
+                    </div>
+                </div>
+                <div class="top-bar__social">
+                    <ul class="top-bar__social-list">
+                        <li class="top-bar__social-item">
+                            <a href="" class="top-bar__social-link">
+                                <img src="../assets/images/ic-fb.svg" alt="" class="top-bar__social-icon">
+                            </a>
+                        </li>
+                        <li class="top-bar__social-item">
+                            <a href="" class="top-bar__social-link">
+                                <img src="../assets/images/ic-instagram.svg" alt="" class="top-bar__social-icon">
+                            </a>
+                        </li>
+                        <li class="top-bar__social-item">
+                            <a href="" class="top-bar__social-link">
+                                <img src="../assets/images/ic-youtube.svg" alt="" class="top-bar__social-icon">
+                            </a>
+                        </li>
+                        <li class="top-bar__social-item">
+                            <a href="" class="top-bar__social-link">
+                                <img src="../assets/images/ic-medium.svg" alt="" class="top-bar__social-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="" class="header__logo-link">
+                        <img src="../assets/images/logo.png" alt="" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-wrapper">
+                        <ul class="header__menu-list">
+                            <li class="menu-item">
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Giới thiệu</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Boki là gì?</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Cảm nhận học viên</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Kiến thức hữu ích</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <button class="header__menu-btn-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__menu-btn-mobile"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Home Banner -->    
+    <section class="section home-banner">
+        <div class="home-banner__slider">
+            <div class="home-banner__slider-item">
+                <div class="img-wrap">
+                    <img src="../assets/images/Banner01.png" alt="">
+                </div>
+            </div>
+            <div class="home-banner__slider-item">
+                <div class="img-wrap">
+                    <img src="https://via.placeholder.com/1280x503" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Banner -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer__widget">
+                            <h3 class="footer__widget-title">THÔNG TIN LIÊN HỆ</h3>
+                            <ul class="footer__widget-list">
+                                <li class="footer__widget-item">
+                                    <span>Hotline: </span>
+                                    <a href="tel:024.6789.6789" class="footer__widget-link" target="_blank">024.6789.6789</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <span>Email: </span>
+                                    <a href="mailto:info@manateach.com" class="footer__widget-link" target="_blank">info@manateach.com</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <span>Địa chỉ: </span>
+                                    <a href="https://goo.gl/maps/2wLHBLU7RJ3ubSsP7" class="footer__widget-link" target="_blank">1234 Tây Hồ, Hoàn Kiếm, HN</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <span>Website: </span>
+                                    <a href="Manateach.com" class="footer__widget-link" target="_blank">Manateach.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer__widget">
+                            <h3 class="footer__widget-title">FEATURES LIST ITEMS</h3>
+                            <ul class="footer__widget-list">
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer__widget">
+                            <h3 class="footer__widget-title">TIN TỨC MỚI NHẤT</h3>
+                            <ul class="footer__widget-list">
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer__widget">
+                            <h3 class="footer__widget-title">QUY ĐỊNH & CHÍNH SÁCH</h3>
+                            <ul class="footer__widget-list">
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                                <li class="footer__widget-item">
+                                    <a href="#" class="footer__widget-link">Nội dung được tạo mẫu để thiết kế</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-wrapper">
+                    <div class="footer__bottom-social">
+                        <ul class="footer__bottom-social-list">
+                            <li class="footer__bottom-social-item">
+                                <a href="#" class="footer__bottom-social-link">
+                                    <img src="assets/images/ic-fb.svg" alt="" class="footer__bottom-social-icon">
+                                </a>
+                            </li>
+                            <li class="footer__bottom-social-item">
+                                <a href="#" class="footer__bottom-social-link">
+                                    <img src="assets/images/ic-instagram.svg" alt="" class="footer__bottom-social-icon">
+                                </a>
+                            </li>
+                            <li class="footer__bottom-social-item">
+                                <a href="#" class="footer__bottom-social-link">
+                                    <img src="assets/images/ic-twitter.svg" alt="" class="footer__bottom-social-icon">
+                                </a>
+                            </li>
+                            <li class="footer__bottom-social-item">
+                                <a href="#" class="footer__bottom-social-link">
+                                    <img src="assets/images/ic-pinterest.svg" alt="" class="footer__bottom-social-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom-text-copyright">@ 2022 ManaTeach.com - Website được thiết kế & phát triển bởi WeAble</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="overlay"></div>
     
 
     <!-- Script -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../libs/slick/slick.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

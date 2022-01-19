@@ -10,6 +10,10 @@
 }
 
 :root {
+    --height-top-bar: 40px
+}
+
+:root {
     --font-family: 'Montserrat', sans-serif;
 }
 
@@ -34,6 +38,10 @@ a {
     text-decoration: none;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 img {
@@ -135,3 +143,25 @@ button:hover,
 input[type="submit"]:hover {
     opacity: 0.8;
 }
+
+@-webkit-keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+  }
