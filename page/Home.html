@@ -14,21 +14,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="preload" as="style">
 
     <!-- Style -->
-    <link rel="stylesheet" href="assets/css/boostrap.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/boostrap.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="../libs/slick/slick.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style type="text/css">
+        /* Home Banner */
+        .home-banner {
+            margin-bottom: 50px;
+        }
+        .home-banner__slider {
+            margin-bottom: 0;
+        }
+        .home-banner__slider-item .img-wrap {
+            padding-top: 39.25%;
+        }
+        .home-banner__slider .slick-dots {
+            bottom: 30px;
+        }
+        .home-banner__slider .slick-dots li button:before {
+            font-size: 14px;
+            opacity: 1;
+            color: var(--color-white);
+        }
+        .home-banner__slider  .slick-dots li.slick-active button:before {
+            color: var(--color-red);
+        }
+        /* End Home Banner */
+    </style>
 
 </head>
 <body>
-    
+
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="top-bar__wrapper">
                 <div class="top-bar__contact">
-                    <img src="assets/images/ic-phone.svg" alt="" class="top-bar__contact-icon">
+                    <img src="../assets/images/ic-phone.svg" alt="" class="top-bar__contact-icon">
                     <div class="top-bar__hotline">
                         <span>Hotline: </span>
                         <a href="tel:0236.345.6789" class="top-bar__hotline-link">0236.345.6789</a>
@@ -38,22 +63,22 @@
                     <ul class="top-bar__social-list">
                         <li class="top-bar__social-item">
                             <a href="" class="top-bar__social-link">
-                                <img src="assets/images/ic-fb.svg" alt="" class="top-bar__social-icon">
+                                <img src="../assets/images/ic-fb.svg" alt="" class="top-bar__social-icon">
                             </a>
                         </li>
                         <li class="top-bar__social-item">
                             <a href="" class="top-bar__social-link">
-                                <img src="assets/images/ic-instagram.svg" alt="" class="top-bar__social-icon">
+                                <img src="../assets/images/ic-instagram.svg" alt="" class="top-bar__social-icon">
                             </a>
                         </li>
                         <li class="top-bar__social-item">
                             <a href="" class="top-bar__social-link">
-                                <img src="assets/images/ic-youtube.svg" alt="" class="top-bar__social-icon">
+                                <img src="../assets/images/ic-youtube.svg" alt="" class="top-bar__social-icon">
                             </a>
                         </li>
                         <li class="top-bar__social-item">
                             <a href="" class="top-bar__social-link">
-                                <img src="assets/images/ic-medium.svg" alt="" class="top-bar__social-icon">
+                                <img src="../assets/images/ic-medium.svg" alt="" class="top-bar__social-icon">
                             </a>
                         </li>
                     </ul>
@@ -69,7 +94,7 @@
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="" class="header__logo-link">
-                        <img src="assets/images/logo.png" alt="" class="header__logo-img">
+                        <img src="../assets/images/logo.png" alt="" class="header__logo-img">
                     </a>
                 </div>
                 <div class="header__menu">
@@ -106,6 +131,85 @@
         </div>
     </header>
     <!-- End Header -->
+
+    <!-- Home Banner -->    
+    <section class="section home-banner">
+        <div class="home-banner__slider">
+            <div class="home-banner__slider-item">
+                <div class="img-wrap">
+                    <img src="../assets/images/Banner01.png" alt="">
+                </div>
+            </div>
+            <div class="home-banner__slider-item">
+                <div class="img-wrap">
+                    <img src="https://via.placeholder.com/1280x503" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Banner -->
+
+    <!-- Box Content Left Right -->
+    <section class="section box-content-left-right">
+        <div class="container">
+            <div class="block-title text-center">
+                <h2 class="title">BẠN ĐANG GẶP PHẢI VẤN ĐỀ?</h2>
+                <div class="line">
+                    <div class="line--color"></div>
+                        <img src="../assets/images/line-icon.svg" alt="" class="line__icon">
+                    <div class="line--color"></div>
+                </div>
+            </div>
+            <div class="box-left-right__inner">
+                <div class="box-left-right__item">
+                    <div class="box-image-wrap">
+                        <div class="box-circle-color" style="background-color: rgba(55, 66, 250, 0.5);"></div>
+                        <img src="../assets/images/Saly-16.png" alt="">
+                    </div>
+                    <div class="box-content-wrap">
+                        <p>Bạn không thể xin được một công việc tại Nhật bản?</p>
+                    </div>
+                </div>
+                <div class="box-left-right__item">
+                    <div class="box-image-wrap">
+                        <div class="box-circle-color" style="background-color: rgba(255, 165, 2, 0.5);"></div>
+                        <img src="../assets/images/Saly-15.png" alt="">
+                    </div>
+                    <div class="box-content-wrap">
+                        <p>Bạn đang mong muốn thì một công việc có chất lượng tốt và xứng đáng với bản thân?</p>
+                    </div>
+                </div>
+                <div class="box-left-right__item">
+                    <div class="box-image-wrap">
+                        <div class="box-circle-color" style="background-color: rgba(30, 144, 255, 0.5);"></div>
+                        <img src="../assets/images/Saly-14.png" alt="">
+                    </div>
+                    <div class="box-content-wrap">
+                        <p>Bạn loay hoay không biết nên làm gì để có thể thăng tiến trong công việc?</p>
+                    </div>
+                </div>
+                <div class="box-left-right__item">
+                    <div class="box-image-wrap">
+                        <div class="box-circle-color" style="background-color: rgba(255, 131, 123, 0.5);"></div>
+                        <img src="../assets/images/1 1.png" alt="">
+                    </div>
+                    <div class="box-content-wrap">
+                        <p>Bạn dành quá nhiều thời gian học tiếng Nhật nhưng không mang lại hiệu quả?</p>
+                    </div>
+                </div>
+                <div class="box-left-right__item">
+                    <div class="box-image-wrap">
+                        <div class="box-circle-color" style="background-color: rgba(204, 180, 255, 0.5);"></div>
+                        <img src="../assets/images/Saly-26.png" alt="">
+                    </div>
+                    <div class="box-content-wrap">
+                        <p>Bạn không có cơ hội phát triển bản thân ở môi trường hiện tại?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Box Content Left Right -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -230,10 +334,12 @@
     <!-- End Footer -->
 
     <div class="overlay"></div>
+    
 
     <!-- Script -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../libs/slick/slick.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
 </body>
 </html>
