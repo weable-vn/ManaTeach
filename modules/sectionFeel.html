@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../style.css">
     <style>
         .fell .item{
-            border: 1px solid #FF2021;
+            border: 1px solid var(--color-red);
             box-sizing: border-box;
             border-radius: 10px;
             padding: 40px 30px;
@@ -38,25 +38,26 @@
         .fell .item .box-item img{
             width: 150px;
             height: 150px;
+            border-radius: 50%;
         }
 
         .fell .item .box-item .name {
-            font-size: 1.2rem;
+            font-size: 1rem;
             line-height: 18px;
             text-align: center;
             font-weight: bold;
-            color: #000;
+            color: var(--color-black);
             margin: 20px 0;
         }
 
         .fell .item:hover{
-            background: #FF2021;
-            color: #fff;
+            background: var(--color-red);
+            color: var(--color-white);
         }
 
         .fell .item:hover
         .box-item .name{
-            color: #fff;
+            color: var(--color-white);
         }
 
         @media (max-width: 768px){
