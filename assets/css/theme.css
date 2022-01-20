@@ -19,8 +19,7 @@
 
 html {
     font-family: var(--font-family);
-    font-size: 62.5%;
-    /*tương đương 10px*/
+    font-size: 16px;
     line-height: 1.5;
     background-color: var(--white-color);
 }
@@ -91,7 +90,7 @@ img {
 .block-title .title {
     font-family: var(--font-family);
     font-weight: bold;
-    font-size: 2.6rem;
+    font-size: 1.6em;
     line-height: 44px;
     color: var(--color-black);
 }
@@ -130,7 +129,7 @@ input[type="submit"] {
     color: var(--color-white);
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 0.9em;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
